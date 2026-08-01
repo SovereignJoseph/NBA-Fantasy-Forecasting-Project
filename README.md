@@ -35,9 +35,9 @@ Age was the one feature that helped — its negative coefficient (~-0.5 pts/year
 - **Small sample** — 243 paired player-seasons, 49 in the test set. Differences under ~0.01 R² are within the noise; cross-validation would give more stable estimates.
 - **Box-score ceiling** — these are lagging outcome stats. Prior-season average alone already explains ~74% of next season, and much of the rest (injuries, trades, role changes) isn't predictable from any box score.
 
-## What I'd do next
+## Personal Reflection
 
-The biggest lever isn't a fancier model, it's better data — player-tracking signals (time in the restricted area, shot quality, defensive matchups, on/off splits) that explain *why* the box score came out the way it did. A tree-based model would also be worth trying, specifically to test whether advanced stats have *conditional* value (mattering for young players but not veterans) that a linear model structurally can't capture.
+I don't think a fancier model is the solution, instead it's better data and player-tracking signals (time in the restricted area, shot quality, defensive matchups, on/off splits) that explain *why* the box score came out the way it did. The next time will be to try and pull the type of data that Second Spectrum tracks to make a better model.
 
 ## Running it
 
@@ -47,5 +47,5 @@ Put the notebook and `player_birthdates.csv` in the same folder before running. 
 
 ## Repo contents
 
-- `nba-fantasy-forecasting.ipynb` — the full project: pipeline, models, and inline documentation (stage summaries, a debugging log, and a concepts log)
+- `Fantasy Modeling Project Fianal NoteBook.ipynb.` — the full project: pipeline, models, and inline documentation (stage summaries, a debugging log, and a concepts log)
 - `player_birthdates.csv` — cached player birthdates
